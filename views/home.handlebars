@@ -1,4 +1,4 @@
-<div id="main-container" class="grid lg:grid-cols-12">
+<main id="main-container" class="grid lg:grid-cols-12">
     <div id="comments-container" class="lg:col-start-3 lg:col-end-9">
         <div class="comments-top py-6">
             <div class="comments-top__title">
@@ -20,7 +20,7 @@
                         <div class='comment_details float-left w-full'>
                             <h4 class='comment_user_name'>
                                 {{this.name}} 
-                                <span class='comment_date ml-4 text-gray-400 text-xs'>{{dateFormat this.date}}</span>
+                                <span class='comment_date ml-4 text-xs'>{{dateFormat this.date}}</span>
                                 <span class='comment_likes float-right'>{{this.likes}} likes</span>
                             </h4>
                             <p class='comment_text'>
@@ -32,4 +32,4 @@
             </div>
         {{/if}}
     </div>
-</div>
+</main>
