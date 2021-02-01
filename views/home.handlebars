@@ -1,0 +1,35 @@
+<div id="main-container" class="grid lg:grid-cols-12">
+    <div id="comments-container" class="lg:col-start-3 lg:col-end-9">
+        <div class="comments-top py-6">
+            <div class="comments-top__title">
+                <i class="comments-icon fas fa-comment-alt"></i>
+                <div class="comments-top__title__text">
+                    {{comments.length}} comments
+                </div>
+            </div>
+            <div class="comments-top__sort float-right">
+                <span>Sort</span>
+                <a class="likes" onclick="ui.sortCommentsByLikes(JSON.parse(document.getElementsByClassName(`comments-list`)[0].getAttribute(`data-comments`)))">Likes</a>
+                <a class="newest" onclick="ui.sortCommentsByDate(JSON.parse(document.getElementsByClassName(`comments-list`)[0].getAttribute(`data-comments`)))">Newest</a>
+            </div>
+        </div>
+        {{#if comments}}
+            <div class="comments-list" data-comments="{{json comments}}">
+                {{#each comments}}
+                    <div id='comment_user_{{this.id}}' class='comment_user sm:px-1 py-4'>
+                        <div class='comment_details float-left w-full'>
+                            <h4 class='comment_user_name'>
+                                {{this.name}} 
+                                <span class='comment_date ml-4 text-gray-400 text-xs'>{{dateFormat this.date}}</span>
+                                <span class='comment_likes float-right'>{{this.likes}} likes</span>
+                            </h4>
+                            <p class='comment_text'>
+                                {{this.body}}
+                            </p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,66 @@
+.comment_details h4.comment_user_name {
+    font-size: 18px;
+    margin:0 0 8px 0;
+}
+
+.comment_user {
+    display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  margin: 0;
+}
+
+.comments-icon {
+    padding-top: 7px;
+}
+
+.comments-top {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.comments-top__sort {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -4px;
+}
+
+.comments-top__sort a {
+    display: flex;
+    justify-content: center;
+    min-width: 90px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 8px;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.comments-top__sort a.likes {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #555555;
+}
+
+.comments-top__sort a.newest {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.comments-top__title {
+    display: inline-flex;
+}
+
+.comments-top__title__text {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.comment_text {
+    max-width: 80%;
+}
