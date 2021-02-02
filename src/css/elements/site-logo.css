@@ -1,4 +1,19 @@
 .site-logo {
-	padding: 2rem 1rem;
-	width: 285px;
+  padding: 2rem 1rem;
+  width: 285px;
+}
+
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); /* legacy browsers */
+  clip-path: inset(
+    50%
+  ); /*modern browsers, clip-path works inwards from each corner */
+  white-space: nowrap;
 }
